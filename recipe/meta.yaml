@@ -1,5 +1,5 @@
 {% set name = "kvh" %}
-{% set version = "0.3.7" %}
+{% set version = "0.3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/kvh-{{ version }}.tar.gz
-  sha256: 7f8d9b7c5c4b3abc7784cbb9e6367479dd9cdaea8a1b378dbbf23f337ee89998
+  sha256: 5d2736ff5894bbc9e177f1f3f64466c1d6c32b136b4a2d17be4b413eb4f9be59
 
 build:
   #script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation -Csetup-args="$MESON_ARGS"
-  number: 3
+  number: 0
   #skip: true  # [not (osx and arm64 and py == 312)]
 
 requirements:
